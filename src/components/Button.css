@@ -1,0 +1,28 @@
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  width: 150px;
+}
+
+.button button {
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button button.disabled {
+  background-color: grey !important;
+}
+.button button:focus,
+.button button:hover {
+  outline: 0.75em solid rgba(0, 0, 0, 0.3);
+}
+
+.button-label {
+  margin-top: 5px;
+}
